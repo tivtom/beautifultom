@@ -7,7 +7,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+
+      <a class="navbar-brand-img" href="{{ .Site.BaseURL }}">
+        <img src='{{ .Site.BaseURL }}{{ .Site.Params.favicon }}'>
+      </a>
+      <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+        {{ .Site.Title }}
+      </a>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -31,15 +37,16 @@
       </ul>
     </div>
 
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
+    <div class="avatar-container">
       {{ if isset .Site.Params "logo" }}
           <a title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}">
-              <img class="avatar-img" src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" />
+              <div class="hexagon">
+                <div class="hexTop"></div>
+                <div class="hexBottom"></div>
+              </div>
           </a>
       {{ end }}
-	  </div>
-	</div>
+    </div>
 
   </div>
 </nav>

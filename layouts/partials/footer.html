@@ -5,7 +5,7 @@
         <ul class="list-inline text-center footer-links">
           {{ if .Site.Author.facebook }}
           <li>
-            <a href="https://www.facebook.com/{{ .Site.Author.facebook }}" title="Facebook">
+            <a target="_blank" href="https://www.facebook.com/{{ .Site.Author.facebook }}" title="Facebook">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -15,7 +15,7 @@
           {{ end }}
           {{ if .Site.Author.github }}
           <li>
-            <a href="https://github.com/{{ .Site.Author.github }}" title="GitHub">
+            <a target="_blank" href="https://github.com/{{ .Site.Author.github }}" title="GitHub">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -25,7 +25,7 @@
           {{ end }}
 		      {{ if .Site.Author.twitter }}
           <li>
-            <a href="https://twitter.com/{{ .Site.Author.twitter }}" title="Twitter">
+            <a target="_blank" href="https://twitter.com/{{ .Site.Author.twitter }}" title="Twitter">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -35,7 +35,7 @@
           {{ end }}
 		      {{ if .Site.Author.email }}
           <li>
-            <a href="mailto:{{ .Site.Author.email }}" title="Email me">
+            <a target="_blank" href="mailto:{{ .Site.Author.email }}" title="Email me">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -45,7 +45,7 @@
           {{ end }}
 		      {{ if .Site.Author.linkedin }}
           <li>
-            <a href="https://linkedin.com/{{ .Site.Author.linkedin }}" title="LinkedIn">
+            <a target="_blank" href="https://linkedin.com/{{ .Site.Author.linkedin }}" title="LinkedIn">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -55,7 +55,7 @@
           {{ end }}
 	    	  {{ if .Site.Author.stackoverflow }}
           <li>
-            <a href="https://stackoverflow.com/users/{{ .Site.Author.stackoverflow }}" title="StackOverflow">
+            <a target="_blank" href="https://stackoverflow.com/users/{{ .Site.Author.stackoverflow }}" title="StackOverflow">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
@@ -65,7 +65,7 @@
           {{ end }}
           {{ if .Site.Author.soundcloud }}
           <li>
-            <a href="https://soundcloud.com/{{ .Site.Author.soundcloud }}" title="SoundCloud">
+            <a target="_blank" href="https://soundcloud.com/{{ .Site.Author.soundcloud }}" title="SoundCloud">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-soundcloud fa-stack-1x fa-inverse"></i>
@@ -75,7 +75,7 @@
           {{ end }}
           {{ if .Site.Author.wikipedia }}
           <li>
-            <a href="https://wikipedia.org/wiki/User:{{ .Site.Author.wikipedia }}" title="Wikipedia">
+            <a target="_blank" href="https://wikipedia.org/wiki/User:{{ .Site.Author.wikipedia }}" title="Wikipedia">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-wikipedia-w fa-stack-1x fa-inverse"></i>
@@ -83,31 +83,29 @@
             </a>
           </li>
           {{ end }}
-
     		  <li>
-      			<a href="{{ .Site.BaseURL}}index.xml" title="RSS">
+      			<a target="_blank" href="{{ .Site.BaseURL}}index.xml" title="RSS">
       			  <span class="fa-stack fa-lg">
         				<i class="fa fa-circle fa-stack-2x"></i>
         				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
       			  </span>
       			</a>
-    		  </li>		
-
+    		  </li>
         </ul>
+
         <p class="copyright text-muted">
-    		  {{ .Site.Author.name }}
-    		  &nbsp;&bull;&nbsp;
-    		  {{ .Site.LastChange.Format "2006" }}
-    		  
+          &nbsp;&bull;&nbsp;
     		  {{ if .Site.Title }}
-    		  &nbsp;&bull;&nbsp;
     		  <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+          &nbsp;&nbsp;&bull;&bull;&nbsp;&nbsp;
     		  {{ end }}
-  	    </p>
-  	        <!-- Please don't remove this, keep my open source work credited :) -->
-    		<p class="theme-by text-muted">
-    		  Theme by
-    		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+          Copyright
+          {{ .Site.LastChange.Format "2006" }}
+          &nbsp;&nbsp;&bull;&bull;&nbsp;&nbsp;
+    		  Theme
+          &nbsp;&nbsp;&bull;&bull;&nbsp;&nbsp;
+    		  <a target="_blank" href="http://deanattali.com/beautiful-jekyll/">beautiful-hugo</a>
+          &nbsp;&bull;&nbsp;
     		</p>
       </div>
     </div>
