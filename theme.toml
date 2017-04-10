@@ -4,7 +4,7 @@ licenselink = "https://github.com/ttiveron/beautifultom/blob/master/LICENSE"
 description = "A port of Beautiful Jekyll theme"
 tags = ["blog", "company", "portfolio", "projects", "minimal", "responsive"]
 features = ["blog", "themes", "disqus", "minimal", "responsive"]
-min_version = 0.15
+min_version = 0.1
 
 [original author]
     name = "halogenica"
