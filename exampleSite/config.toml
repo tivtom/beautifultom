@@ -1,14 +1,16 @@
 baseurl = "http://username.github.io"
 languageCode = "en-us"
-title = "beautifultom"
 theme = "beautifultom"
 pygmentsUseClasses = true
 #disqusShortname = "XXX"
 #googleAnalytics = "XXX"
 
+title = "beautifultom"
+subtitle = "Build a beautiful and slightly less simple (but still simple!) website in minutes"
+
 [Params]
   logo = "img/avatar-icon.png"
-  subtitle = "Build a beautiful and slightly less simple (but still simple!) website in minutes"
+  favicon = "img/bt_hex.jpg"
 
 [Author]
   name = "Some Person"

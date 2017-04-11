@@ -93,7 +93,7 @@ img {
 
 /* --- Navbar --- */
 .navbar-custom {
-  background: #EAE0C8;
+  background-color: #EAE0C8;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -174,7 +174,7 @@ img {
     width: 175px;
     height: 101.04px;
     margin: 50.52px 0;
-    background-image: url(/img/thomastiveron.jpg);
+    background-image: url(/img/avatar-icon.png);
     background-size: auto 197.4538px;
     background-position: center;
     box-shadow: 0 0 20px rgba(64,64,64,0.6);
