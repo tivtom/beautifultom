@@ -10,6 +10,8 @@ subtitle = "Build a beautiful and slightly less simple (but still simple!) websi
 
 [Params]
   logo = "img/avatar-icon.png"
+  rightlogo = "img/bt_hex_trans.png"
+  favicon = "img/bt_hex_trans.png"
 
 [Author]
   name = "Some Person"
