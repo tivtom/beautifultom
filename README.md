@@ -1,20 +1,12 @@
 # beautifultom - A port of Beautiful Jekyll/Hugo Theme
 
-![beautiful tom Screenshot] (https://github.com/ttiveron/beautifultom/blob/master/images/home.jpg)
+![beautiful tom Screenshot](https://github.com/ttiveron/beautifultom/blob/master/images/home.jpg)
 
 # BUT ... this is where the similarity ends
 
-## Installation
-
-    $ mkdir themes
-    $ cd themes
-    $ git clone https://github.com/ttiveron/beautifultom.git beautifultom
-
-See [the Hugo documentation](http://gohugo.io/themes/installing/) for more information.
-
 ### UpForGrabs
 
-I'm not very good at HTML and CSS are you? The url to the octocat image in the css is hard coded! I would love for this to pass through from the HTML, where it can be set by Go Templating (I tried see /layouts/partials/nav.html). Maybe the CSS has to be update by JS? If you are a front-end wizard [or novice wizard :) ] I'd love you help!
+I'm not very good at HTML and CSS are you? The url to the octocat image in the css is hard coded! I would love for this to pass through from the HTML, where it can be set by Go Templating (I tried see /layouts/partials/nav.html). Maybe the CSS has to be update by JS? If you are a front-end wizard [or novice wizard :) ] I would love your help!
 
 ## Extra Features - Will be expanding on all these shortly!
 1. Favicon
@@ -26,6 +18,15 @@ I'm not very good at HTML and CSS are you? The url to the octocat image in the c
   - this functionality is now working
 5. Blogs, Pages, Sections!
   - Sections! If you set your blog categories, these pages will index blogs. Currently the value is hard coded in the template. Will be updating the Go Tempalating to grab the url and use this to filter posts.
+
+
+## Installation
+
+    $ mkdir themes
+    $ cd themes
+    $ git clone https://github.com/ttiveron/beautifultom.git beautifultom
+
+See [the Hugo documentation](http://gohugo.io/themes/installing/) for more information.
 
 ### Responsive
 
@@ -56,5 +57,5 @@ MIT Licensed, see
  [My LICENSE](https://github.com/ttiveron/beautifultom/blob/master/LICENSE)
 
  [Port's LICENSE](https://github.com/daattali/beautiful-jekyll/blob/master/LICENSE)
- 
+
  [Theme's LICENSE](https://github.com/halogenica/Hugo-BeautifulHugo/blob/master/LICENSE)
