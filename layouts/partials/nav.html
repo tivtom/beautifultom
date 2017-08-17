@@ -9,7 +9,7 @@
       </button>
 
       <a class="navbar-brand-img" href="{{ .Site.BaseURL }}">
-        <img src='{{ .Site.BaseURL }}{{ .Site.Params.favicon }}'>
+        <img src='{{ .Site.BaseURL }}{{ .Site.Params.rightlogo }}'>
       </a>
       <a class="navbar-brand" href="{{ .Site.BaseURL }}">
         {{ .Site.Title }}
@@ -37,16 +37,18 @@
       </ul>
     </div>
 
-    <div class="avatar-container" >
+
+    <div class="avatar-container">
       {{ if isset .Site.Params "logo" }}
-          <a title="{{ .Site.Title }}">
-            <div class="hexagon" background-image="{{ .Site.BaseURL }}{{ .Site.Params.logo}}">
-              <div class="hexTop" ></div>
-              <div class="hexBottom" ></div>
+          <a title="{{ .Site.Title }}"  href="{{ .Site.BaseURL }}">
+            <div class="hexagon" style="background-image:url('{{ .Site.BaseURL }}{{ .Site.Params.logo}}');">
+              <div class="hexTop"></div>
+              <div class="hexBottom"></div>
             </div>
-          </a>
+              </a>
       {{ end }}
     </div>
+
 
   </div>
 </nav>

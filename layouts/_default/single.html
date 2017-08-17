@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
   {{ partial "head.html" . }}
-
   <body>
     {{ partial "nav.html" . }}
 
@@ -14,9 +12,8 @@
       {{ else if eq .Type "section" }}
         {{ partial "section.html" . }}
       {{ else }}
-        NO MATCHING PARTIAL
+        "NO MATCHING PARTIAL"
       {{ end }}
     </div>
   </body>
 {{ partial "footer.html" . }}
-</html>

@@ -10,7 +10,6 @@ subtitle = "Build a beautiful and slightly less simple (but still simple!) websi
 
 [Params]
   logo = "img/avatar-icon.png"
-  favicon = "img/bt_hex.jpg"
 
 [Author]
   name = "Some Person"
@@ -24,11 +23,11 @@ subtitle = "Build a beautiful and slightly less simple (but still simple!) websi
   wikipedia = "username"
 
 [[menu.main]]
-    name = "Blog"
-    url = "/"
-    weight = 1
+  name = "Really Cool Section"
+  url = "/section/projects/"
+  weight = 1
 
 [[menu.main]]
-    name = "About"
-    url = "/page/about/"
-    weight = 2
+  name = "About Me"
+  url = "/page/about/"
+  weight = 2

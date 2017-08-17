@@ -2,6 +2,8 @@
 title: Code Sample
 subtitle: Using Pygments
 date: 2016-03-08
+type: "post"
+categories : ["Projects"]
 ---
 
 The following is a code sample using the "highlight" shortcode provided in Hugo.
